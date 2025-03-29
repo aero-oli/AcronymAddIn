@@ -5,6 +5,7 @@
         private Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
         private Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
         private Microsoft.Office.Tools.Ribbon.RibbonButton btnDetectAcronyms;
+        private Microsoft.Office.Tools.Ribbon.RibbonButton btnUpdateAcronyms;
 
         /// <summary>
         /// Required designer variable.
@@ -30,6 +31,7 @@
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
             this.btnDetectAcronyms = this.Factory.CreateRibbonButton();
+            this.btnUpdateAcronyms = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             // 
@@ -42,6 +44,7 @@
             // group1
             // 
             this.group1.Items.Add(this.btnDetectAcronyms);
+            this.group1.Items.Add(this.btnUpdateAcronyms);
             this.group1.Label = "Acronym Operations";
             this.group1.Name = "group1";
             // 
@@ -50,6 +53,12 @@
             this.btnDetectAcronyms.Label = "Detect Acronyms";
             this.btnDetectAcronyms.Name = "btnDetectAcronyms";
             this.btnDetectAcronyms.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnDetectAcronyms_Click);
+            // 
+            // btnUpdateAcronyms
+            // 
+            this.btnUpdateAcronyms.Label = "Update Acronyms";
+            this.btnUpdateAcronyms.Name = "btnUpdateAcronyms";
+            this.btnUpdateAcronyms.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnUpdateAcronyms_Click);
             // 
             // Ribbon1
             // 
